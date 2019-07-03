@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="497.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sanakirja.SanakirjanNimiController">
+	<bottom>
+		<ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+			<buttons>
+				<Button mnemonicParsing="false" onAction="#handleLopeta" text="Lopeta" />
+				<Button defaultButton="true" mnemonicParsing="false" onAction="#handleOK" text="OK" />
+			</buttons>
+			<padding>
+				<Insets right="10.0" />
+			</padding>
+		</ButtonBar>
+	</bottom>
+<center>
+      <Pane fx:id="AlkkuikkunaAlue" prefHeight="457.0" prefWidth="495.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="87.0" layoutY="303.0" text="Anna sanakirjan nimi">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="262.0" layoutY="297.0" prefHeight="39.0" prefWidth="190.0" promptText="suomi">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="87.0" layoutY="99.0" text="Sanakirja" textFill="#271fb5">
+               <font>
+                  <Font name="System Italic" size="49.0" />
+               </font>
+            </Label>
+            <Label layoutX="357.0" layoutY="192.0" text="v. 1.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="357.0" layoutY="220.0" text="Markéta Sovová">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
